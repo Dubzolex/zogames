@@ -1,5 +1,5 @@
 // Initialisation
-const WEB_LINK = "zogames.onrender.com"
+const WEB_LINK = "https://zogames.onrender.com";
 const code = localStorage.getItem("code")
 
 // Authentification
@@ -12,6 +12,7 @@ document.getElementById("signup").onclick = async () => {
     body: JSON.stringify({ email, password })
   });
   const data = await res.json();
+  alert(JSON.stringify(data))
   document.getElementById("status").textContent = JSON.stringify(data);
 };
 
@@ -82,7 +83,7 @@ const sendQuestion = async () => {
         return;
     }
     
-    await fetch(WEB_LINK & "/sendQuestion", {
+    await fetch(WEB_LINK + "/sendQuestion", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ question })
@@ -141,7 +142,7 @@ const programme = async () => {
 programme();
 
 const backend = async (message, data) =>{
-    await fetch(WEB_LINK & message, {
+    await fetch(WEB_LINK + message, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ code, data })

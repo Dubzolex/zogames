@@ -4,7 +4,11 @@ import admin from "firebase-admin";
 import axios from "axios";
 
 const app = express();
-app.use(cors({ origin: "*", credentials: true }));
+app.use(cors({
+  origin: "https://zogames.web.app",
+  methods: ["GET", "POST"],
+  credentials: true 
+}));
 app.use(express.json());
 
 const firebaseConfig = {
@@ -23,10 +27,10 @@ admin.initializeApp({firebaseConfig});
 app.post("/signup", async (req, res) => {
   const { email, password } = req.body;
   try {
-    const user = await admin.auth().createUser({ email, password });
+    //const user = await admin.auth().createUser({ email, password });
     // Crée un custom token pour cet utilisateur
-    const customToken = await admin.auth().createCustomToken(user.uid);
-    res.json({ customToken });
+    //const customToken = await admin.auth().createCustomToken(user.uid);
+    res.json({message: `${email} et ${password} reçu du backend` });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
