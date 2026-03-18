@@ -1,0 +1,150 @@
+
+
+
+        
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loup Garou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo-jeu">Loup Garou</div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Jeu</a></li>
+                <li><a href="role.html">Rôles</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li class="btn client"><a href="jouer.html">Jouer</a></li>
+            </ul>
+            <div class="toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="pseudo">
+            <i class="fa-solid fa-user"></i>
+            <span></span>
+        </div>    
+   </header>
+    
+<div class="wrap gap-block " style="padding: 30px; ">
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Villageois</h2>
+        <img src="role/_villageois.png">
+        <p>Camp: Villageois</p>
+        <p>Il n'as role particulier à part débattre et trouvé les méchants lors du vote de jour.</p>
+    </div>
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Voyante</h2>
+        <img src="role/_voyante.png">
+        <p>Camp: Villageois</p>
+        <p>Chaque nuit, elle regarde l'identité d'une personne pour connaitre son role.</p>
+    </div>
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Garde</h2>
+        <img src="role/_garde.png">
+        <p>Camp: Villageois</p>
+        <p>Chaque nuit, il protége une personne, il ne peut pas protèger de fois de suite la même personne.</p>
+    </div>
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Sorcière</h2>
+        <img src="role/_sorcière.png">
+        <p>Camp: Villageois</p>
+        <p>Elle dispose d'une potion de soin pour sauver la victime des loups garous et d'une potion de poison pour empoisonner une personne, une seule potion peuvent être utiliser par nuit.</p>
+    </div>
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Chasseur</h2>
+        <img src="role/_chasseur.png">
+        <p>Camp: Villageois</p>
+        <p>A sa mort, il dispose d'une dernière balles pour tirer sur quelqu'un et l'emporter avec lui  dans sa mort.</p>
+    </div>
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Cupidon</h2>
+        <img src="role/_cupidon.png">
+        <p>Camp: Villageois</p>
+        <p>Il rend amoureux 2 joueurs, si l'un meurt durant la partie, l'autre se suicidera d'amour pour son amoureux.</p>
+    </div>
+    
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Loup Garou</h2>
+         <img src="role/_loupgarou.png">
+        <p>Camp: Loup Garou</p>
+        <p>Ils doivent éliminer tous les villageois, chaque nuit en se rejoignant la nuit, ils désignent une victime qui sera éliminer au réveil.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Loup Garou Noir</h2>
+         <img src="role/_loupgarounoir.png">
+        <p>Camp: Loup Garou</p>
+        <p>Une fois dans la partie, il peut rallier la victime des loups garous à son camp.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Ange</h2>
+         <img src="role/_ange.png">
+        <p>Camp: seul</p>
+        <p>Pour gagner, il doit se faire éliminer au moment du premier vote, il peut aussi gagner en couple si son amoureux meurt durant ce vote.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Survivant</h2>
+         <img src="role/_survivant.png">
+        <p>Camp: Seul</p>
+        <p>Il disposent de deux protection pour se protéger la nuit à utiliser astucieussement, si il encore en vie à la fin de la partie, il gagne avec le camp restant.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Assassin</h2>
+         <img src="role/_assassin.png">
+        <p>Camp: Seul</p>
+        <p>Tu gagnes en éliminant tous les membres villages, tu te réveillent la nuit pour poignarder une personne, tu es immunisé contre l'attaque des loups.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Dictateur</h2>
+         <img src="role/_dictateur.png">
+        <p>Camp: Villageois</p>
+        <p>Tu peux effectuer un coup d'état en élimiant quelqu'un, ce qui remplacera le vote de jour, si cette personne fait parti du village tu te suicidera sur le coup sinon tu deviendra le maire du village.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Pirate</h2>
+         <img src="role/_pirate.png">
+        <p>Camp: Villageois</p>
+        <p>Tu désigne un otage durant la première nuit, si tu meurt à l'issu du vote, c'est ton otage qui meurt à ta place et ton role est dévoilé au reste du village.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Corbeau</h2>
+         <img src="role/_corbeau.png">
+        <p>Camp: Villageois</p>
+        <p>Chaque nuit, tu attribut à une personne deux voies supplémentaires lors du prochain vote.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Renard</h2>
+         <img src="role/_renard.png">
+        <p>Camp: Villageois</p>
+        <p>Chaque nuit, tu renifles deux joueurs pour savoir si au moins une personne est hostile au village.</p>
+    </div>
+
+    <div class="container description flex-column-between flex-center gap-item">
+        <h2>Vampire</h2>
+         <img src="role/_vampire.png">
+        <p>Camp: Vampire</p>
+        <p>Toutes les deux nuit, tu transformes une personne en vampire, l'assassin est immunisé contre ton attaque et le chasseur te tue si tu le vises.</p>
+    </div>
+</div>    
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

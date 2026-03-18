@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: brown;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 70px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.logo-jeu {
+    color: white;
+    font-size: 20px;
+}
+.pseudo, .logo-jeu {
+    width: 160px;
+}
+
+.pseudo i{
+    padding: 0 10px 0 0;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.navlinks li {
+    padding: 10px 20px;
+    margin: 6px 20px;
+}
+
+.navlinks li.btn {
+    background-color: orange;
+    border-radius: 12px;
+}
+.navlinks a {
+    color: white;
+}
+.navlinks a:hover {
+    color: black;
+}
+.toggle-menu {
+    font-size: 32px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        position: relative;
+        padding: 8px 20px;
+    }
+    nav {
+        right: 0;
+        position: absolute;
+    }
+    .navlinks {
+        display: none;
+    }
+    .toggle-menu {
+        display: flex;
+        padding: 20px;
+    }
+    .navlinks.show {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: coral;
+        right: 0;
+        top: 99%;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        padding: 10px 0;
+    }
+}
+
+
+/*titre des grandes container de liste*/
+h1{
+    color:dimgrey;
+    font-weight: 600;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+/*titre des description*/
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+/*titre des roles cest a votre tour*/
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+h4{
+    color: black;
+    font-size: 16px; 
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    color: black;
+    background-color: darkgrey;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    border: none;
+}
+.btn:hover{
+    color: rgb(95, 56, 2);
+}
+
+
+
+.role button {
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.role button:hover{
+    color: rgb(27, 138, 53);
+    border: solid 2px rgb(27, 138, 53);
+    font-weight: bold; 
+}
+
+select{
+    padding: 6px;
+    font-size: 12px;
+    height: 36px;
+    min-width: 150px;
+}
+
+input {
+    border: none;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+    color: black;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  
+  }
+
+
+
+
+
+.description img{
+    width: 100px;
+}
+.description{
+    text-align: justify; 
+    font-size: 16px;
+    min-height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+section{
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carte{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.carte-flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carte-flip:hover{
+    transform: rotateY(-180deg);
+}
+
+.carte-front, .carte-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.carte-back{
+    background: url("role/carte-back.png")no-repeat center center;
+    background-size: cover;
+}
+.carte-front{
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+.carte-role{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    width: 250px;
+    height: 340px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: solid 4px rgb(52, 56, 58);
+    background-color:rgb(181, 174, 170);
+    
+
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.carte-role p{
+    text-align: justify;
+    font-size: 12px;
+}
+
+.image-role.Villageois{
+    background: url("role/_villageois.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Voyante{
+    background: url("role/_voyante.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Garde{
+    background: url("role/_garde.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Sorcière{
+    background: url("role/_sorcière.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Chasseur{
+    background: url("role/_chasseur.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Cupidon{
+    background: url("role/_cupidon.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Loup-Garou{
+    background: url("role/_loupgarou.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Ange{
+    background: url("role/_ange.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Loup-Garou-Noir{
+    background: url("role/_loupgarounoir.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Cupidon{
+    background: url("role/_cupidon.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Pirate{
+    background: url("role/_pirate.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Dictateur{
+    background: url("role/_dictateur.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Survivant{
+    background: url("role/_survivant.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Assassin{
+    background: url("role/_assassin.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Corbeau{
+    background: url("role/_corbeau.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Renard{
+    background: url("role/_renard.png")no-repeat center center;
+    background-size: cover;
+}
+.image-role.Vampire{
+    background: url("role/_vampire.png")no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.fondjour{
+    background: url("role/jour.png")no-repeat center center;
+    background-size: cover;
+}
+
+.fondjour.nuit{
+    background: url("role/nuit.png")no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.fond{
+    background: url("role/m.png")no-repeat center center;
+    background-size: cover;
+}
+
+
+.role p{
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timer{
+    /*width: 160px;
+    /*height: 40px;*/
+    text-align: center;
+    /*padding: 10px;*/
+    /*background-color: #f0f0f0;*/
+   /* border-radius: 6px 6px 0 0;*/
+   /* border: 1px grey solid;*/
+    /*border-bottom: none;
+    font-size: 16px;
+    margin: auto;*/
+}
+
+.joueur-mort{
+    font-size: 120px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-message {
+    overflow-y: scroll; /* Ajoute une barre de défilement verticale */
+    height: 120px;
+    border: 2px solid rgba(0, 0, 0, 0.2); 
+    padding: 4px;
+    margin: 20px 0;
+    background-color: #fefefe;
+    max-width: 500px;
+    width: 100%;
+}
+
+.list-message li {
+    text-align: left;
+    font-size: 12px;
+    padding: 4px 10px;
+    color: black;
+}
+
+.list-message::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+}
+
+.list-message::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Couleur de la barre de défilement */
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+.list-message::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2); /* Couleur de l'arrière-plan de la barre de défilement */
+}
+
+.list-message li.evenement{
+    color: rgb(150, 15, 15);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.list-message li.important{
+    color: rgb(20, 47, 184);
+}
+
+
+
+
+/*cntainer de texte */
+
+
+    
+
+
+.container{
+    width: 300px;
+    border: solid 2px gray;
+    border-radius: 20px;
+    background-color: #fefefe;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    padding: 20px;
+   
+}
+
+.transparent{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.form{
+    min-height: 400px;
+}
+
+ul{
+    text-align: center;
+}
+
+.flex-column-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-column-evenly{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-column-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-1{
+    display: flex;
+    flex-grow: 1;
+}
+.flex-stretch{
+    align-items: stretch;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gap{
+    gap: 6px;
+}
+.gap-item{
+    gap: 12px;
+}
+.gap-liste{
+    gap: 16px;
+}
+.gap-element{
+    gap: 20px;
+}
+.gap-block{
+    gap: 40px;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+.flex-center{
+    align-items: center;
+}
+

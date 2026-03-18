@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "enzo-projet"
+  },
+  "targets": {
+    "enzo-projet": {
+      "hosting": {
+        "zogames": [
+          "zogames"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zogames - login</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<header>
+    <div class="fx-row jc-between ai-center w-1000 px-20">
+        <h1>Zogames</h1>
+        <div>
+            <a href="/v2/login/"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</header>
+
+<section class="fx-col jc-center ai-center px-10 py-20 grow">
+    <div class="container w-400 h-500 fx-col jc-between connexion">
+        <div class="fx-col gap-10">
+            <div class="fx-row jc-end">
+                <a href="/">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <div>Bienvenue, rejoins-nous !</div>
+        </div>
+        <div class="fx-col gap-40">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mot de passe" required autocomplete="current-password">
+        </div>
+        <div>
+            <div id="status"></div>
+        </div>
+        <div id="auth" class="fx-row gap-10 jc-evenly wrap">
+            <button id="signup">S'inscrire</button>
+            <button id="signin">Se connecter</button>
+        </div>
+    </div>
+</section>
+</body>
+
+<script type="module" src="script.js"></script>
+</html>

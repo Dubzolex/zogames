@@ -1,0 +1,311 @@
+@import url("../style.css");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /*text-decoration: none;*/
+    list-style: none;
+}
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    min-height: 100vh;
+}
+
+
+
+
+
+header i{
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    background-color:#2883a7;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 80px;
+}
+
+a{
+    color: inherit;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+h4{
+    color: black;
+    font-size: 16px; 
+    text-align: center;
+}
+
+.text-center p, p.text-center{
+    text-align: center;
+}
+.text-justify p, p.text-justify{
+    text-align: justify;
+}
+
+
+
+
+
+section {
+    width: 100%;
+}
+
+
+.container{
+    position: relative;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+
+.connexion i, .play i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+section{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#status, .status{
+    font-size: 12px;
+}
+
+
+
+
+.green{
+    color:green;
+}
+
+.green.predict{
+    color: blue;
+}
+
+.valid-predict{
+    color: brown;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.red{
+    color: red;
+}
+
+input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 12px;
+}
+
+input[type=text]{
+    min-width: 180px;
+}
+
+input[type=number]{
+    width: 100px;
+    font-size: 14px;
+    padding: 0px 10px;
+    height: 36px;
+    text-align: center;
+    /*-moz-appearance: textfield;*/
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+select{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    height: 32px;
+    width: 120px;
+    padding: 0 0 0 8px;
+}
+
+.games select{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    height: 32px;
+    width: 160px;
+    padding: 0 0 0 10px;
+
+}
+
+
+button {
+    padding: 0 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #205b7f;
+    color: white;
+    cursor: pointer;
+    min-width: 90px;
+    height: 36px;
+}
+button:hover {
+    background-color: #2e83b7;
+    font-weight: bold;
+}
+
+button a{
+    text-decoration: none;
+}
+  
+
+
+img{
+    width: 100px;
+}
+
+
+a.link{
+    font-size: 12px;
+}
+a.link:hover{
+    color: blue;
+}
+
+
+/* GAMES */
+
+.games i{
+    font-size: 16px;
+    cursor: auto;
+}
+
+.games table {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.games th,
+.games td {
+    padding: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.games th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+
+.games tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+.games th:nth-child(1),
+.games td:nth-child(1) { width: 10%; }
+
+.games.tab-col-3 th:nth-child(2),
+.games.tab-col-3 td:nth-child(2) { width: 70%; }
+
+.games.tab-col-3 th:nth-child(3),
+.games.tab-col-3 td:nth-child(3) { width: 20%; }
+
+
+.games.tab-col-4 th:nth-child(2),
+.games.tab-col-4 td:nth-child(2) { width: 60%; }
+
+.games.tab-col-4 th:nth-child(3),
+.games.tab-col-4 td:nth-child(3) { width: 15%; }
+
+.games.tab-col-4 th:nth-child(4),
+.games.tab-col-4 td:nth-child(4) { width: 15%; }
+
+.table-score-4 th:nth-child(1),
+.table-score-4 td:nth-child(1) {width: 40% }
+.table-score-4 th:nth-child(2),
+.table-score-4 td:nth-child(2) {width: 40% }
+.table-score-4 th:nth-child(3),
+.table-score-4 td:nth-child(3) {width: 16% }

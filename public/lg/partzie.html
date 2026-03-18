@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loup Garou - Partie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <div class="logo-jeu">Loup Garou</div>
+    <nav>
+        <ul class="navlinks"></ul>
+        <div class="toggle-menu"></div>
+
+        <div id="btn-stop" onclick="gameStop()">
+            <i class="fa-solid fa-hand" style="padding: 20px; font-size: 24px; cursor: pointer"></i> 
+        </div>
+    </nav>
+    <div class="pseudo">
+        <i class="fa-solid fa-user"></i>
+        <span></span>
+    </div> 
+</header>
+
+<section class="flex-column-between flex-center flex-1 gap-20 fondjour">
+
+
+
+<div class="carte">
+    <div class="carte-flip">
+        <div class="carte-back "></div>
+        <div class="carte-front ">
+            <div class="carte-role flex-column-between-center">
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+
+
+
+
+<div class="timer">Attente...</div>
+
+
+<div id="interface" class="container flex-column-between-center role form-w3 form-h4 transparent">
+        
+        
+</div>
+    
+<div class="maire-name" style="display: none;width:200px; text-align: center;"></div>
+<button onclick="stop()"></button>  
+<ul class="list-message transparent"></ul>
+
+
+</section>
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="menu.js"></script>
+
+<script type="module" src="game.js"></script>
+
+
+
+</body>
+</html>

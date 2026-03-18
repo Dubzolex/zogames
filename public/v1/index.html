@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zogames</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<header>
+    <div class="fx-row jc-between ai-center w-1000 px-20">
+        <h1>Zogames</h1>
+        <div id="connect">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+</header>
+   
+<section class="fx-col gap-50 w-1000">    
+    <div class="fx-row jc-evenly gap-50 wrap">
+
+        <div class="fx-col container w-400 h-500 gap-20">
+            <div class="fx-col gap-40">
+                <h2>Zoreka</h2>
+                <div>
+                    <img src="../images/game/game3.png">
+                </div>
+                <div>Répondez aux questions anonymement !</div>
+                <hr>
+            </div>
+            <div class="fx-col jc-evenly grow gap-20">
+                
+                <div class="fx-col gap-10">
+                    <div class="fx-row jc-evenly ai-center gap-20">
+                        <div class="fx-col gap-20 wrap jc-between">
+                            <select id="round1" style="width: 100px">
+                                <option value="1">1 tour</option>
+                                <option value="2">2 tours</option>
+                                <option value="3">3 tours</option>
+                                <option value="4" selected>4 tours</option>
+                                <option value="5">5 tours</option>
+                                <option value="6">6 tours</option>
+                                <option value="7">7 tours</option>
+                                <option value="8">8 tours</option>
+                                <option value="9">9 tours</option>
+                                <option value="10">10 tours</option>
+                            </select>
+                            <select id="time1" style="width: 100px">
+                                <option value="30">30s</option>
+                                <option value="60">60s</option>
+                                <option value="120">120s</option>
+                                <option value="180" selected>180s</option>
+                            </select>
+                            <select id="public1" style="width: 100px">
+                                <option value="public">Public</option>
+                                <option value="private">Privée</option>
+                            </select>
+                        </div>
+                        <button id="create1">Créer</button>
+                    </div>
+                    <div id="status-c1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fx-col container w-400 h-500 gap-20">
+            <div class="fx-col gap-40">
+                <h2>Zomera</h2>
+                <div>
+                    <img src="../images/game/game3.png">
+                </div>
+                <div>Trouvez la musique des autres joueurs !</div>
+                <hr>
+            </div>
+            <div class="fx-col gap-20 jc-evenly grow">
+                <div class="fx-col gap-20">
+                    <div class="fx-row jc-evenly gap-20">
+                        <div class="fx-col gap-20 wrap jc-between">
+                            <select id="round2" style="width: 100px">
+                                <option value="1">1 tour</option>
+                                <option value="2">2 tours</option>
+                                <option value="3">3 tours</option>
+                                <option value="4" selected>4 tours</option>
+                                <option value="5">5 tours</option>
+                                <option value="6">6 tours</option>
+                                <option value="7">7 tours</option>
+                                <option value="8">8 tours</option>
+                                <option value="9">9 tours</option>
+                                <option value="10">10 tours</option>
+                            </select>
+                            <select id="time2" style="width: 100px">
+                                <option value="30">30s</option>
+                                <option value="60">60s</option>
+                                <option value="120">120s</option>
+                                <option value="180" selected>180s</option>
+                            </select>
+                            <select id="public2" style="width: 100px">
+                                <option value="public">Public</option>
+                                <option value="private">Privée</option>
+                            </select>
+                        </div>
+                        <div class="fx-col jc-center">
+                            <button id="create2">Créer</button>
+                        </div>
+                    </div>
+                    <div id="status-c2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fx-col container w-400 h-500 gap-20">
+            <div class="fx-col gap-40">
+                <h2>Zoneba</h2>
+                <div>
+                    <img src="../images/game/game3.png">
+                </div>
+                <div>Cherchez un mot commençant par une lettre !</div>
+                <hr>
+            </div>
+            <div class="fx-col gap-20 jc-evenly grow">
+                <div class="fx-col gap-20">
+                    <div class="fx-row jc-evenly gap-20">
+                        <div class="fx-col gap-20 wrap jc-between">
+                            <select id="round3" style="width: 100px">
+                                <option value="1">1 tour</option>
+                                <option value="2">2 tours</option>
+                                <option value="3" selected>3 tours</option>
+                                <option value="4">4 tours</option>
+                                <option value="5">5 tours</option>
+                                <option value="6">6 tours</option>
+                                <option value="7">7 tours</option>
+                                <option value="8">8 tours</option>
+                                <option value="9">9 tours</option>
+                                <option value="10">10 tours</option>
+                            </select>
+                            <select id="public3" style="width: 100px">
+                                <option value="public">Public</option>
+                                <option value="private">Privée</option>
+                            </select>
+                        </div>
+                        <div class="fx-col jc-center">
+                            <button id="create3">Créer</button>
+                        </div>
+                    </div>
+                    <div id="status-c3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fx-col container gap-40 w-400 h-400">
+            <div class="fx-col jc-betwween gap-40 px-20 ai-center">
+                <div>
+                    <h2>Trouvez une partie !</h2>
+                </div>
+                <div class="fx-col gap-20 w-400">
+                    <div class="fx-row gap-40 jc-evenly">
+                        <div>
+                            <input id="code" type="number" aria-valuemin="100000" aria-valuemax="999999" placeholder="XXXXXX">
+                        </div>
+                        <button id="join">Rejoindre</button>
+                    </div>
+                    <div id="status-j"></div>
+                </div>
+            </div>
+            <div class="fx-col grow jc-center">
+                <ul id="list-game" class="fx-row jc-evenly gap-30 wrap">aucune partie disponible</ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+       
+<script type="module" src="./index.js"></script>
+<script type="module" src="./htmlMain.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loup Garou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<header></header>
+
+<section class="flex-column-evenly flex-center gap-40 text-center">
+    <h1>Bienvenue au Loup Garou</h1>
+    <div class="form-w8 flex gap-20">
+        <h2>Règles et Objectifs</h2>
+        <p>Le jeu des Loups-Garous de Thiercelieux est un incontournable des soirées entre amis et s'est bien plus qu'un simple jeu de société., offrant une immersion dans une atmosphère de mystère, de déduction et de tension. Dans le paisible village de Thiercelieux, une menace sourde gronde : des loups-garous se dissimulent parmi les habitants, rôdant la nuit pour semer la terreur. L'objectif des villageois est simple, mais périlleux : découvrir et éliminer les loups-garous avant que ceux-ci ne dévorent l'ensemble de la village. Mais les villageois réussiront-ils à briser la malédiction, ou les loups-garous s'empareront-ils de Thiercelieux ? C'est une expérience immersive où déduction et bluff sont essentiels, plongeant les joueurs dans une lutte psychologique captivante. Qui saura déjouer les apparences et triompher de cette lutte entre hommes et monstres ?</p>
+    </div>
+    <div class="form-w8 flex gap-20">
+        <h2>Déroulement du Jeu</h2>
+        <p>Au début de chaque partie, des rôles secrets sont distribués aux joueurs. L'identité de chaque joueur est cachée, et seuls les loups-garous se reconnaissent entre eux. Cette ambiguïté favorise les stratégies de dissimulation, de manipulation et de déduction, rendant chaque décision cruciale pour l’issue de la partie. Le jeu se déroule en alternant entre des phases de nuit et de jour. La nuit, chaque joueur accomplit son rôle en silence. Les loups-garous se consultent discrètement et choisissent une victime parmi les villageois. D'autres personnages spéciaux, comme la voyante ou le chasseur, peuvent également agir selon leurs pouvoirs, ajoutant de l’intrigue et des retournements inattendus. Durant la phase de jour, les joueurs découvrent les victimes des loups-garous. Un vote est ensuite organisé pour éliminer le joueur le plus suspect. En cas d'égalité, le maire du village dispose d'un vote décisif. Lorsqu'un joueur est éliminé, son rôle est révélé, offrant de précieuses informations aux survivants pour le tour suivant.</p>
+    </div>
+    <a class="jouer" href="jouer.html">Jouer</a>
+</section>
+    
+<section class="flex-row role flex-center wrap gap-40 ">
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_villageois.png">
+        <div class="flex gap-10">
+            <h2>Villageois</h2>
+            <p>Camp: Villageois</p>
+            <p>Il n'as role particulier à part débattre et trouvé les méchants lors du vote de jour.</p>
+        </div>
+        
+    </div>
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_voyante.png">
+        <div class="flex gap-10">
+            <h2>Voyante</h2>
+            <p>Camp: Villageois</p>
+            <p>Chaque nuit, elle regarde l'identité d'une personne pour connaitre son role.</p>
+        </div>
+    </div>
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_garde.png">
+        <div class="flex gap-10">
+            <h2>Garde</h2>
+            <p>Camp: Villageois</p>
+            <p>Chaque nuit, il protége une personne, il ne peut pas protèger de fois de suite la même personne.</p>
+        </div>
+    </div>
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_sorcière.png">
+        <div class="flex gap-10">
+            <h2>Sorcière</h2>
+            <p>Camp: Villageois</p>
+            <p>Elle dispose d'une potion de soin pour sauver la victime des loups garous et d'une potion de poison pour empoisonner une personne, une seule potion peuvent être utiliser par nuit.</p>
+        </div>
+        
+    </div>
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_chasseur.png">
+        <div class="flex gap-10"> 
+            <h2>Chasseur</h2>
+            <p>Camp: Villageois</p>
+            <p>A sa mort, il dispose d'une dernière balles pour tirer sur quelqu'un et l'emporter avec lui  dans sa mort.</p>
+        </div>
+    </div>
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_cupidon.png">
+        <div class="flex gap-10">
+            <h2>Cupidon</h2>
+            <p>Camp: Villageois</p>
+            <p>Il rend amoureux 2 joueurs, si l'un meurt durant la partie, l'autre se suicidera d'amour pour son amoureux.</p>
+        </div>
+    </div>
+    
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_loupgarou.png">
+        <div class="flex gap-10">
+            <h2>Loup Garou</h2>
+            <p>Camp: Loup Garou</p>
+            <p>Ils doivent éliminer tous les villageois, chaque nuit en se rejoignant la nuit, ils désignent une victime qui sera éliminer au réveil.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_loupgarounoir.png">
+        <div class="flex gap-10">
+            <h2>Loup Garou Noir</h2>
+            <p>Camp: Loup Garou</p>
+            <p>Une fois dans la partie, il peut rallier la victime des loups garous à son camp.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_ange.png">
+        <div class="flex gap-10">
+            <h2>Ange</h2>
+            <p>Camp: seul</p>
+            <p>Pour gagner, il doit se faire éliminer au moment du premier vote, il peut aussi gagner en couple si son amoureux meurt durant ce vote.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_survivant.png">
+        <div class="flex gap-10">
+            <h2>Survivant</h2>
+            <p>Camp: Seul</p>
+            <p>Il disposent de deux protection pour se protéger la nuit à utiliser astucieussement, si il encore en vie à la fin de la partie, il gagne avec le camp restant.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_assassin.png">
+        <div class="flex gap-10">
+            <h2>Assassin</h2>
+            <p>Camp: Seul</p>
+            <p>Tu gagnes en éliminant tous les membres villages, tu te réveillent la nuit pour poignarder une personne, tu es immunisé contre l'attaque des loups.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_dictateur.png">
+        <div class="flex gap-10">
+            <h2>Dictateur</h2>
+            <p>Camp: Villageois</p>
+            <p>Tu peux effectuer un coup d'état en élimiant quelqu'un, ce qui remplacera le vote de jour, si cette personne fait parti du village tu te suicidera sur le coup sinon tu deviendra le maire du village.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_pirate.png">
+        <div class="flex gap-10">
+            <h2>Pirate</h2>
+            <p>Camp: Villageois</p>
+            <p>Tu désigne un otage durant la première nuit, si tu meurt à l'issu du vote, c'est ton otage qui meurt à ta place et ton role est dévoilé au reste du village.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_corbeau.png">        
+        <div class="flex gap-10">
+            <h2>Corbeau</h2>
+            <p>Camp: Villageois</p>
+            <p>Chaque nuit, tu attribut à une personne deux voies supplémentaires lors du prochain vote.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_renard.png">
+        <div class="flex gap-10">
+            <h2>Renard</h2>
+            <p>Camp: Villageois</p>
+            <p>Chaque nuit, tu renifles deux joueurs pour savoir si au moins une personne est hostile au village.</p>
+        </div>
+    </div>
+
+    <div class="container form-w5 flex-row gap-20">
+        <img src="role/_vampire.png">
+        <div class="flex gap-10">
+            <h2>Vampire</h2>
+            <p>Camp: Vampire</p>
+            <p>Toutes les deux nuit, tu transformes une personne en vampire, l'assassin est immunisé contre ton attaque et le chasseur te tue si tu le vises.</p>
+        </div>
+    </div>
+</section>    
+<script type="module" src="firebase.js"></script>
+<script type="module" src="menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loup Garou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo-jeu">Loup Garou</div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Jeu</a></li>
+                <li><a href="role.html">Rôles</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li class="btn"><a href="jouer.html">Jouer</a></li>
+            </ul>
+            <div class="toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="pseudo">
+            <i class="fa-solid fa-user"></i>
+            <span></span>
+        </div>   
+   </header>
+
+   <div class="description flex-column-between gap-element" style="padding: 50px 20px">
+    <h2>Loup Garou</h2>
+    <p>Le jeu des Loups-Garous de Thiercelieux est l'un des meilleurs mini-jeux de société. Il plonge les joueurs dans une histoire où règnent mystère et suspicion. Au cœur du village de Thiercelieux, un étrange phénomène se produit : des loups-garous rôdent la nuit, semant la terreur parmi les villageois. L'objectif est simple : les villageois doivent unir leurs forces pour éliminer cette menace tandis que les loups-garous cherchent à dévorer tous les habitants. La question est donc posée : les villageois parviendront-ils à mettre fin au règne des loups-garous, ou bien ces derniers réussiront-ils à anéantir toute opposition ?</p>
+    <h2>Le But</h2>
+    <p>Au début de chaque partie, les rôles sont distribués parmi les joueurs. Chaque personnage appartient à l'un des deux camps : celui des villageois ou celui des loups-garous. L'objectif de chaque joueur est d'éliminer les membres du camp adverse, dont l'identité reste secrète jusqu'à leur mort. Cette ambiguïté ajoute une couche de stratégie et de déduction, rendant chaque tour crucial pour l'issue de la partie.</p>
+    <h2>Déroulement de la Partie</h2>
+    <p>Le jeu se déroule en alternant entre des phases de jour et de nuit. Pendant la nuit, sous l'éclat de la pleine lune, chaque joueur est appelé à accomplir sa mission, puis retourne se coucher. C'est durant cette phase que les loups-garous attaquent, semant la peur et la confusion parmi les villageois.</p>
+    <p>Au lever du jour, les joueurs découvrent les victimes des loups-garous, mais l'identité des meurtriers reste un mystère. S'ensuit alors une phase de débat où chacun essaie de démasquer les loups-garous cachés parmi eux. Un vote est ensuite organisé, et le joueur qui reçoit le plus de voix est éliminé. Si un vote est indécis, le maire du village, possédant un vote double, a le pouvoir de trancher. Une fois éliminé, le rôle du joueur est révélé à tous, donnant aux survivants des indices précieux pour la suite de la partie.</p>
+    <h2>Le maître du jeu</h2>
+    <p>Le rôle du maître du jeu est essentiel au bon déroulement de la partie. C'est lui qui orchestre les différentes phases et garantit le respect des règles. De plus, il doit veiller à ce que le serveur API reste actif tout au long du jeu. En effet, le bon fonctionnement du serveur est crucial pour que les joueurs encore en vie puissent poursuivre leur aventure dans le village de Thiercelieux sans interruption. Le maître du jeu se doit donc de rester vigilant et de maintenir l'application en marche jusqu'à la fin de la partie.</p>
+</div>
+
+
+       
+    
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

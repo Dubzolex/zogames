@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <div id="chat"></div>
+    <form>
+        <input type="text" id="message" placeholder="Chatter avec les villageois">
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <style>
+        #chat {
+            border: 1px solid black;
+            height: 80vh;
+            overflow-y: scroll;
+        }
+        #chat p {
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        window.onload = () => {
+            document.querySelector("form").addEventListener("submit", (e) => {
+                e.preventDefault();
+                const msg = document.querySelector("#message").value;
+                socket.emit("chat message", msg);
+                document.querySelector("#message").value = "";
+            });
+
+            socket.on("chat message", (msg) => {
+                const p = document.createElement("p");
+                p.textContent = msg;
+                document.querySelector("#chat").appendChild(p);
+            });
+        }
+    </script>
+</body>
+</html>

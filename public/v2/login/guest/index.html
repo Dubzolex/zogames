@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zogames - Choisir son pseudo</title>
+    <link rel="stylesheet" href="/v2/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<section class="fx-col jc-center ai-center px-10 py-20" style="min-height: 100vh;">
+    <div class="container w-400 h-500 fx-col jc-between connexion">
+        <div class="fx-col gap-40">
+            <div class="fx-row jc-between">
+                <h3 id="name"></h3>
+                <div id="code"></div>
+            </div>
+            <div>Vous n'avez pas de compte !</div>
+        </div>
+        <div class="fx-col jc-between ai-center gap-40 wrap">
+            <div class="fx-col gap-20">
+                <div>Inventez un pseudo...</div>
+            </div>
+            <div class="fx-col jc-between gap-20 wrap">
+                <div>
+                    <input id="pseudo" placeholder="Votre pseudo">
+                </div>
+                <div id="status"></div>
+            </div>
+        </div>
+        <div class="fx-row gap-20">
+            <div class="fx-col gap-30 grow jc-end">
+                <div>
+                    <button id="join">Rejoindre</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+<script type="module" src="./script.js"></script>
+</html>

@@ -1,0 +1,90 @@
+/* flex */
+.fx-row{display: flex;flex-direction: row;}
+.fx-col{display: flex;flex-direction: column;}
+.jc-start{justify-content: flex-start;}
+.jc-end{justify-content: flex-end;}
+.jc-center{justify-content: center;}
+.jc-between{justify-content: space-between;}
+.jc-around{justify-content: space-around;}
+.jc-evenly{justify-content: space-evenly;}
+.jc-stretch{justify-content: stretch;}
+.ai-start{align-items: flex-start}
+.ai-end{align-items: flex-end;}
+.ai-center{align-items: center;}
+.ai-baseline{align-items: baseline;}
+.ai-stretch{align-items: stretch;}
+.ac-center{align-content: center;}
+.wrap{flex-wrap: wrap;}
+.grow{flex-grow: 1;}
+
+
+/* espacement */
+.gap-5{gap: 5px;}
+.gap-10{gap: 10px;}
+.gap-20{gap: 20px;}
+.gap-30{gap: 30px;}
+.gap-40{gap: 40px;}
+.gap-50{gap: 50px;}
+.gap-60{gap: 60px;}
+.gap-70{gap: 70px;}
+.gap-80{gap: 80px;}
+.gap-90{gap: 90px;}
+.gap-100{gap: 100px;}
+
+.p-10{gap: 10px}
+.px-10{padding-left: 10px;padding-right: 10px;}
+.py-10{padding-top: 10px;padding-bottom: 10px;}
+.p-20{padding: 20px;}
+.px-20{padding-left: 20px;padding-right: 20px;}
+.py-20{padding-top: 20px;padding-bottom: 20px;}
+.p-20{padding: 30px;}
+.px-30{padding-left: 30px;padding-right: 30px;}
+.py-30{padding-top: 30px;padding-bottom: 30px;}
+.p-40{padding: 40px;}
+.px-40{padding-left: 40px;padding-right: 40px;}
+.py-40{padding-top: 40px;padding-bottom: 40px;}
+
+.m-10{margin: 10px;}
+.mx-10{margin-left: 10px;margin-right: 10px;}
+.my-10{margin-top: 10px;margin-bottom: 10px;}
+.m-20{margin: 20px}
+.mx-20{margin-left: 20px;margin-right: 20px;}
+.my-20{margin-left: 20px;margin-right: 20px;}
+.m-auto{margin: auto;}
+.mx-auto{margin: 0 auto;}
+.my-auto{margin: auto 0;}
+
+
+/* taille*/
+
+.w-100{width: 100%;max-width: 100px;}
+.w-200{width: 100%;max-width: 200px;}
+.w-250{width: 100%;max-width: 250px;}
+.w-300{width: 100%;max-width: 300px;}
+.w-400{width: 100%;max-width: 400px;}
+.w-500{width: 100%;max-width: 500px;}
+.w-600{width: 100%;max-width: 600px;}
+.w-700{width: 100%;max-width: 700px;}
+.w-800{width: 100%;max-width: 800px;}
+.w-900{width: 100%;max-width: 900px;}
+.w-1000{width: 100%;max-width: 1000px;}
+
+.h-100{min-height: 100px;}
+.h-200{min-height: 200px;}
+.h-300{min-height: 300px;}
+.h-400{min-height: 400px;}
+.h-500{min-height: 500px;}
+.h-600{min-height: 600px;}
+
+
+
+.gd-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-justify{text-align: justify;}
